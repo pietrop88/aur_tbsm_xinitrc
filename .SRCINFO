@@ -1,4 +1,4 @@
-pkgbase = tbsm
+pkgbase = tbsm-xinitrc
 	pkgdesc = A pure bash session or application launcher. Inspired by cdm, tdm and krunner.
 	pkgver = 0.5
 	pkgrel = 1
@@ -7,9 +7,13 @@ pkgbase = tbsm
 	arch = any
 	license = GPL
 	depends = bash
+	provides = tbsm
+	conflicts = tbsm
 	backup = etc/xdg/tbsm/tbsm.conf
-	source = tbsm-0.5.tar.gz::https://github.com/loh-tar/tbsm/archive/v0.5.tar.gz
+	source = tbsm-xinitrc-0.5.tar.gz::https://github.com/loh-tar/tbsm/archive/v0.5.tar.gz
+	source = tbsm_xinitrc.patch
 	md5sums = 35faadd3c3cdba0c87541823cadb65f1
+	md5sums = fe7f5508ca705e5d80d456f9ee51de5c
 
-pkgname = tbsm
+pkgname = tbsm-xinitrc
 
