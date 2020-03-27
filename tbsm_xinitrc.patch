@@ -1,0 +1,25 @@
+diff --unified --recursive --text --color a/src/tbsm b/src/tbsm
+--- a/src/tbsm	2018-12-12 19:39:45.000000000 +0100
++++ b/src/tbsm	2020-03-27 13:38:52.757826140 +0100
+@@ -430,8 +430,8 @@
+       ;;
+     S)  # X Sessions
+       if [[ $runInTTY ]]; then
+-        info "Run command: startx ${bin[@]} -- ${XserverArg[@]}"
+-        startx ${bin[@]} -- ${XserverArg[@]}
++        info "Run command: startx"
++        startx
+       else
+         info "Not running in tty. Will not start X session." "1"
+         return 1
+@@ -450,8 +450,8 @@
+       ;;
+     X)  # Applications
+       if [[ $runInTTY ]]; then
+-        info "Run command: startx ${bin[@]} -- ${XserverArg[@]}"
+-        startx ${bin[@]} -- ${XserverArg[@]}
++        info "Run command: startx"
++        startx
+       else
+         info "Not running in tty, run: ${bin[@]}"
+         ${bin[@]}
