@@ -14,6 +14,8 @@ source=("$pkgname-$pkgver.tar.gz::https://github.com/loh-tar/$pkgparent/archive/
         "tbsm_xinitrc.patch")
 md5sums=('35faadd3c3cdba0c87541823cadb65f1'
          'fe7f5508ca705e5d80d456f9ee51de5c')
+provides=('tbsm')
+conflicts=('tbsm')
 
 package() {
   cd "$pkgparent-$pkgver"
